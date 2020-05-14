@@ -12,6 +12,7 @@ body {
   font-family: Arial;
   font-size: 10px;
   height: 200vh;
+    font-family: 'Source Code Pro', monospace;
 }
 
 /*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
@@ -25,6 +26,8 @@ body {
   body {
     font-size: 18px;
   }
+    
+    
 }
 
     /*breakpoint*/
@@ -82,17 +85,26 @@ header {
 .site-title{
     padding:18px;
     font-size: 4em;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .site-subtitle {
     
     font-style: italic;  
    /* color: #ffffff;*/
-  color: silver;
+  color: black;
  /* font-style: italic;*/
  /* font-weight: lighter;*/
   text-align: center;
-  font-size: 2em;*/
+  font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    line-height: 1.8em
+}
+
+.portifolio{
+    padding: 2em;
+    height: 100vh;
+    
 }
 
 .img-portfolio {
@@ -100,7 +112,50 @@ header {
   width: 120px;
 }
 
-figcaption,h2{
-    color:silver;
+.grid{
+    display: grid;
+    grid-gap: 3.5em;
     
+    
+        
+}
+
+@media(min-width:110px){
+    .grid{
+    
+    grid-template-columns: repeat(2,120px);
+    justify-content: center;
+    
+        
+}
+    
+    @media(min-width:780px){
+    .grid{
+    
+    grid-template-columns: repeat(2,120px);
+    justify-content: center;
+    align-content: center
+    
+        
+}
+    
+}
+
+.portifolio h2{
+    color:silver;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1.3em;
+    font-size: 1.5em
+    
+}
+
+.portifolio figure{
+    text-align: center;
+}
+
+figcaption{
+    color:silver;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1.3em;
+    font-size: 1.01em
 }

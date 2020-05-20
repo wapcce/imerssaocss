@@ -8,12 +8,14 @@
 
 body {
     background-image: url('../img/bandeira2.jpg');
-    backdrop-filter: blur(1vh);
-
-    background-size: auto 100vh;
+    /*backdrop-filter: blur(1vh);*/
+    object-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial;
     font-size: 10px;
-    height: 400vh;
+    height: 100%;
+    width:100%;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -146,7 +148,7 @@ a:hover{
     display: inline-block;
     white-space: nowrap;
     padding-left: 100%;
-    animation: marquee 36s linear forwards;
+    animation: marquee 6s linear forwards;
 }
 
 
@@ -335,12 +337,14 @@ card-back{
 
 
 
-.sobre .figure .tt{
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    width: 200px;
-    height: 200px; 
-
-    border-radius: 50%;
+img[src$="eu.png"]{
+    
+    /*clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);*/
+    width: 960px;
+    height: 637px; 
+    transform: translate(-50% -50%);
+    border-radius: 10%;
+     
 }
 
 

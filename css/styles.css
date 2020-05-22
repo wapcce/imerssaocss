@@ -228,54 +228,54 @@ a:hover{
 
 
 
-.flip-card{
+/*.flip-card{
     
     height: 180px;
     perspective: 1000px;
-}
+}*/
 
 
 
 
-.card{
+/*.card{
     position: relative;
     transform-style: preserve-3d;
     transition: transform 3s;
-}
+}*/
 
 
 
 
-.flip-card:hover, card{
-    /*backface-visibility: visible;*/
+/*.flip-card:hover, card{
+    /*backface-visibility: visible;
     transform: rotateY(180deg);
     
-}
+}*/
 
 
 
 
-.card-front, .card-back{
+/*.card-front, .card-back{
     backface-visibility: hidden;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-}
+}*/
 
 
 
-card-back{
+/*card-back{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, .7);
-    /*background-color: white;*/
+    background-color: white;/
     height: 180px;
     width: 100%;
     transform: rotateY(180deg);
 }
-
+*/
 
 
 
@@ -339,14 +339,20 @@ card-back{
 
 img[src$="eu.png"]{
     
+    clip-path: polygon(45% 20%, 100% 20%, 100% 100%, 45% 100%, 20% 50%);
     /*clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);*/
-    width: 960px;
-    height: 637px; 
+    /*clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);*/
+    float:right;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    width: 248px;
+    height: 254px; 
     transform: translate(-50% -50%);
-    border-radius: 10%;
+    border-radius: 20%;
+    /*border-top-right-radius: 60%;
+    
      
 }
-
 
 
 .sobre a:hover{
@@ -361,15 +367,15 @@ img[src$="eu.png"]{
 
 
 
-/*figcaption{
+figcaption{
     font-style: italic;  
-    /* color: #ffffff;*/
-  /*  color: black;
+     color: #ffffff;*/
+    color: black;
     font-family: 'Source Code Pro', monospace;
     margin-bottom: 1.3em;
     font-size: 1.01em
     transform:none;
-}*/
+}
 
 
 
@@ -381,6 +387,7 @@ img[src$="eu.png"]{
 
 
 .contato{
+    
     text-align: center;
     /*box-sizing: -30em;*/
     padding-top: 15em;
@@ -398,6 +405,6 @@ img[src$="eu.png"]{
 
 .contato .icons{
     text-align: center;
-    display: contents;
+    display: inline;
 }
 
